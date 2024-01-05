@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import "~react-image-gallery/styles/css/image-gallery.css";
+
+:root {
+  --grey: #f7f7f7;
+  --blue: #00B1FF;
+  --deepblue: #1939FF;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
+    "Droid Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #ffffff;
+}
+
+.bg-orange {
+  background-color: var(--hunt);
+}
+
+button.primary:hover {
+  background-color: var(--huntdark);
+}
+
+.text-hunt {
+  color: var(--hunt);
+}

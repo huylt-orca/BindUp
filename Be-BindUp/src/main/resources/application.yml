@@ -1,0 +1,69 @@
+server:
+#  ssl:
+#    key-store: classpath:keystore/springboot.p12
+#    key-store-password: password
+#    key-store-type: pkcs12
+#    key-alias: springboot
+#    key-password: password
+#    trust:
+#      store:
+#        nodeValue: classpath:keystore/springboot.p12
+#        password: password
+  port: 5000
+spring:
+  profiles:
+    active: local
+  jpa:
+    hibernate:
+      ddl-auto: update
+    generate-ddl: true
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL8Dialect
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  redis:
+    host: redis-18504.c292.ap-southeast-1-1.ec2.cloud.redislabs.com
+    port: 18504
+    username: default
+    password: r2BkDFKhy1Mc4bxErMHMzmVnshwesCFF
+  cache:
+    type: redis
+    redis:
+      time-to-live: 600000
+      cache-null-values: false
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
+  servlet:
+    multipart:
+      max-file-size: 20MB
+      max-request-size: 20MB
+#  security:
+#    oauth2:
+#      client:
+#        registration:
+#          google:
+#            clientId: 730896390786-07dn69c69u3ftc5i7fsbjl3p47o494h9.apps.googleusercontent.com
+#            clientSecret: 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
+#            scope:
+#              - email
+#              - profile
+---
+spring:
+  config:
+    activate:
+      on-profile: local
+  datasource:
+    url: jdbc:mysql://localhost:3306/fptproducthunt?createDatabaseIfNotExist=true&useUnicode=true&autoReconnect=true
+    username: root
+    password: 123456
+---
+spring:
+  config:
+    activate:
+      on-profile: aws
+  datasource:
+    url: jdbc:mysql://mysql-db.cpzqgswgt4xf.ap-southeast-1.rds.amazonaws.com:3306/fpt-prodhunt-db
+    username: mysql_root
+    password: dolphinately

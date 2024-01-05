@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "605256249348",
+    "firebase_url": "https://fptproducthunt-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "fptproducthunt",
+    "storage_bucket": "fptproducthunt.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:605256249348:android:0fc9e351a565168468c551",
+        "android_client_info": {
+          "package_name": "com.example.android"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "605256249348-7mgm89hmqopg1ioejn96hvdh2h609r54.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC3uEOeSdnokf4weQgEk_nHPkSLkfMaCa8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "605256249348-7mgm89hmqopg1ioejn96hvdh2h609r54.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "605256249348-oqi7lfsmti42cb968oa3vlvml0d783qj.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.android"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
